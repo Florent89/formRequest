@@ -11,6 +11,6 @@ class InformationRepositoryTest extends KernelTestCase
     {
         self::bootKernel();
         $informations = self::$container->get(InformationRepository::class)->count([]);
-        $this->assertEquals(4, $informations);
+        $this->assertEquals(6, $informations);
     }
 }
