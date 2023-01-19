@@ -1,21 +1,19 @@
 # Formulaire d'information
 
-Une application web en Symfony très simple avec un formulaire d'envoi d'informations, lié à une base de donnée.
+Une application web en Symfony très simple contenant un formulaire pour envoyer des informations, lié à une base de données.
 
 ## Pour commencer
 
 
-
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
+Ce qui est requis pour commencer 
 
 - composer
 - symfony
 
 ### Installation
-Cloner le projet : git clone 
+Cloner le projet : git clone https://github.com/Florent89/formRequest.git
 
 Créer fichier .env avec le contenu de .env.dist à la racine du projet
 
@@ -41,7 +39,7 @@ Florent Derouet
 
 ## Choix
 - Une fois soumis, les informations du formulaire sont envoyés en BDD (dans l'exemple BDD monkeezForm, table information)
-- Bootstrap pour la mise en forme du formulaire, choix de rapidité.
-- Doctrine : créer la BDD, et la table information en ligne de commande.
+- Bootstrap pour la mise en forme du formulaire, choix de rapidité / + fichier de styles css plus générique.
+- Doctrine : pour créer la BDD, et la table information en ligne de commande, ainsi que la migration des données.
 - Dossier de Tests : test des fonctionnalités principales, notamment soumission du formulaire, et redirection)
 - Choix des champs film et citation : c'est plus sympa.
