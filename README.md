@@ -19,12 +19,12 @@ Créer fichier .env avec le contenu de .env.dist à la racine du projet
 
 Dans le terminal de VS Code, tapez la commande
 
-composer install
+*composer install*
 
 ## Démarrage
 
 Dans le terminal
-Symfony server:start
+*symfony server:start*
 
 ## Fabriqué avec
 
