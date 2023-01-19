@@ -47,7 +47,7 @@ class FormController extends AbstractController
             $entityManager->persist($info);
             $entityManager->flush();
 
-            return $this->redirectToRoute('film_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('homepage', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('form/form.html.twig', [
