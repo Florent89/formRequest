@@ -18,23 +18,11 @@ class FormController extends AbstractController
     public function index(Request $request): Response
     {
         return $this->render('form/index.html.twig', [
-            'name'=> $request->query->get('hello'),
             'controller_name' => 'FormController',
         ]);
     }
 
-    
-    // public function form(Request $request): Response
-    // {
-    //     $info = new Information();
-    //     $form = $this->createForm(InformationFormType::class, $info);
-
-    //     return $this->render('form/form.html.twig', [
-    //         'comment_form' => $form,
-    //     ]);
-    // }
-
-/**
+    /**
      * @Route("/information", name="form")
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
