@@ -1,0 +1,23 @@
+body {
+  background-color: #c2d2f2;
+}
+
+.img-logo {
+  display: block;
+  width: 180px;
+  margin: auto;
+}
+
+.presentation-text p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.presentation-text p a {
+  color: #d95448;
+}
+/* #F2B56B
+#D99152
+#D95448
+#F2B3B3 */

@@ -1,32 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello
+{% block title %}Hello YouMonKeez
 {% endblock %}
 
 {% block body %}
-	<style>
-		.example-wrapper {
-			margin: 1em auto;
-			max-width: 800px;
-			width: 95%;
-			font: 18px / 1.5 sans-serif;
-		}
-		.example-wrapper code {
-			background: #F5F5F5;
-			padding: 2px 6px;
-		}
-	</style>
 
-	<div class="example-wrapper">
-		<h1>Hello
-			{{ name }}! ✅</h1>
 
+	<h1 class="text-center">Hello YouMonKeez!
+	</h1>
+	<img src='{{ asset('image/logo.png')}}' class='img-logo'/>
+	<div class='presentation-text'>
 		<p>Bienvenue sur cette page web destinée à recueillir vos informations personnelles.</p>
 		<p>Le but étant de faire correspondre des affinités géographiques et cinématographiques !
 		</p>
 		<p>Merci de cliquer
 			<a href={{ path("form") }}>ici</a>
 			pour remplir notre formulaire</p>
+		<div>
 
-	</div>
-{% endblock %}
+		{% endblock %}

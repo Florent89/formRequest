@@ -4,8 +4,32 @@
 {% endblock %}
 
 {% block body %}
+	<style>
+		.form {
+			margin: 1em auto;
+			max-width: 600px;
+			width: 66%;
+			font: 18px / 1.5 sans-serif;
+			padding: 8px;
+		}
+	</style>
+	<h1 class="text-center text-primary">Formulaire de recueil d'informations</h1>
+	<div class="explication-text">
+		<p>Ce Formulaire a pour objectif de mettre en relation les personnes ayant des affinités cinématographiques.</p>
+		<p>Le champ film est destiné à recueillir votre film préféré.
+		</p>
+		<p>Si en plus vous pouvez y renseigner votre citation préférée, ce serait idéal !</p>
+	</div>
+	<p class="text-center text-secondary">Les champs marqués d'une * sont requis</p>
 	{{ form_start(form) }}
-	{{ form_widget(form) }}
-	<button class="btn btn-success">{{ button_label|default('Ajouter') }}</button>
+
+	<div class="errors-message">
+		{{ form_errors(form) }}
+	</div>
+
+	{{ form_widget(form, { 'attr': {'class': 'form'} }) }}
+
 	{{ form_end(form) }}
+
+
 {% endblock %}
