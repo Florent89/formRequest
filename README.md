@@ -1,7 +1,5 @@
 # Formulaire d'information
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
-
 Une application web en Symfony très simple avec un formulaire d'envoi d'informations, lié à une base de donnée.
 
 ## Pour commencer
@@ -12,12 +10,14 @@ Une application web en Symfony très simple avec un formulaire d'envoi d'informa
 
 Ce qu'il est requis pour commencer avec votre projet...
 
-- créer fichier .env avec le contenu de .env.dist
+
 - composer
 - symfony
 
 ### Installation
 Cloner le projet : git clone 
+
+Créer fichier .env avec le contenu de .env.dist à la racine du projet
 
 Dans le terminal de VS Code, tapez la commande
 
@@ -25,14 +25,23 @@ composer install
 
 ## Démarrage
 
-Dites comment faire pour lancer votre projet
+Dans le terminal
+Symfony server:start
 
 ## Fabriqué avec
 
 Symfony
+CSS
 Bootstrap
 Doctrine
 
 
-## Auteurs
+## Auteur
 Florent Derouet
+
+## Choix
+- Une fois soumis, les informations du formulaire sont envoyés en BDD (dans l'exemple BDD monkeezForm, table information)
+- Bootstrap pour la mise en forme du formulaire, choix de rapidité.
+- Doctrine : créer la BDD, et la table information en ligne de commande.
+- Dossier de Tests : test des fonctionnalités principales, notamment soumission du formulaire, et redirection)
+- Choix des champs film et citation : c'est plus sympa.
