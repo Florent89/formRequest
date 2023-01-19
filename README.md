@@ -1,4 +1,4 @@
-# Formulaire d'information
+# Formulaire d'information 🚀
 
 Une application web en Symfony très simple contenant un formulaire pour envoyer des informations, lié à une base de données.
 
@@ -42,4 +42,4 @@ Florent Derouet
 - Bootstrap pour la mise en forme du formulaire, choix de rapidité / + fichier de styles css plus générique.
 - Doctrine : pour créer la BDD, et la table information en ligne de commande, ainsi que la migration des données.
 - Dossier de Tests : test des fonctionnalités principales, notamment soumission du formulaire, et redirection)
-- Choix des champs film et citation : c'est plus sympa.
+- Choix des champs film et citation : c'est plus sympa 🐵.
