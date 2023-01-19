@@ -1,5 +1,6 @@
 body {
   background-color: #c2d2f2;
+  padding: 30px;
 }
 
 .img-logo {
@@ -17,7 +18,22 @@ body {
 .presentation-text p a {
   color: #d95448;
 }
-/* #F2B56B
-#D99152
-#D95448
-#F2B3B3 */
+
+.form {
+  margin: 1em auto;
+  max-width: 600px;
+  width: 66%;
+  font: 18px / 1.5 sans-serif;
+  padding: 8px;
+}
+
+.explication-text {
+  width: 40%;
+  margin: auto;
+  color: black;
+}
+
+.congratulation-container {
+  margin: auto;
+  width: 90%;
+}

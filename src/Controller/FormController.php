@@ -15,7 +15,7 @@ class FormController extends AbstractController
     /**
      * @Route("/", name="homepage")
      */
-    public function index(Request $request): Response
+    public function index(): Response
     {
         return $this->render('form/index.html.twig', [
             'controller_name' => 'FormController',
@@ -35,12 +35,22 @@ class FormController extends AbstractController
             $entityManager->persist($info);
             $entityManager->flush();
 
-            return $this->redirectToRoute('homepage', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('congratulation', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('form/form.html.twig', [
             'information' => $info,
             'form' => $form,
+        ]);
+    }
+
+       /**
+     * @Route("/congratulation", name="congratulation")
+     */
+    public function congratulation(): Response
+    {
+        return $this->render('form/congratulation.html.twig', [
+            'controller_name' => 'FormController',
         ]);
     }
 }
